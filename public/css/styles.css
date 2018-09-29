@@ -1,13 +1,11 @@
 * {
   box-sizing: border-box;
-  outline: none;
-}
+  outline: none; }
 
 body,
 main {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
-}
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px; }
 
 .button {
   min-width: 80px;
@@ -18,18 +16,15 @@ main {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
+  letter-spacing: 0.05em; }
 
 .button--green {
   background-color: #83f285;
   border: 2px solid #137f18;
-  color: #137f18;
-}
+  color: #137f18; }
 
 .button--outline {
   background-color: #ffffff;
-  color: #eb4fba;
-}
+  color: #eb4fba; }
 
 /*# sourceMappingURL=styles.css.map */
