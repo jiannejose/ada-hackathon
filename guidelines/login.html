@@ -7,14 +7,17 @@
     <title>Login and Register</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Srisakdi:700" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../public/js/dhtmlxcalendar/dhtmlxcalendar.css"/>
 </head>
 <body>
     <!-- login--register start -->
-    <section class="login-register container">
-        <div class="row">
+    <section class="login--register">
+        <div class="row form__container container">
             <div class="col-6">
                 <div class="login__banner">
-                    <img src="../assets/images/login-banner.jpg" />
+                    <div class="login--register__background">
+                        <img src="../assets/images/3.jpg" />
+                    </div>
                 </div>
             </div>
             <div class="col-6">
@@ -22,19 +25,25 @@
                 <div class="login--form">
                     <h2>Already a member? Login here.</h2>
                     <form action='backend/login_validate.php' method='POST'>
-                        <div class="form--group">
-                            <span class="form--title">Username :</span>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">Username :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='text' name='username' required><br>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">Password :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='password' name='password' required>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form--group">
-                            <input class="form--input" type='text' name='username' required><br>
-                        </div>
-                        <div class="form--group">
-                            <span class="form--title">Password :</span>
-                        </div>
-                        <div class="form--group">
-                            <input class="form--input" type='password' name='password' required>
-                        </div>
-                        <div>
+                        <div class="form--button">
                             <input class="button--outline" type='submit' value='Login'>
                         </div>
                     </form>
@@ -44,47 +53,61 @@
                 <div class="register--form">
                     <h2>Join us. Create an Account here.</h2>
                     <form action='backend/sign_up_validate.php' method='POST'>
-                        <div class="form--group">
-                            <span class="form--title">First Name :</span>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">First Name :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='text' name='firstname' required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">Last Name :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='text' name='lastname' required>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form--group">
-                            <input type='text' name='firstname' required>
-                        </div>
-                        <div class="form--group">
-                            <span class="form--title">Last Name :</span>
-                        </div>
-                        <div class="form--group">
-                                <input type='text' name='lastname' required>
+                        <div class="row">
+                            <div class="col-6">
+
+                            </div>
+                            <div class="col-6">
+
+                            </div>
                         </div>
                         <div class="form--group">
                             <span class="form--title">Birthday :</span>
                         </div>
                         <div class="form--group">
-                            <input type='text' name='birthday' id='calendar' required>
+                            <input class="form--input" type='text' name='birthday' id='calendar' required>
                         </div>
                         <div class="form--group">
                             <span class="form--title">Email :</span>
                         </div>
                         <div class="form--group">
-                            <input type='text' name='email' required>
+                            <input class="form--input" type='text' name='email' required>
                         </div>
                         <div class="form--group">
                             <span class="form--title">Username :</span>
                         </div>
                         <div class="form--group">
-                            <input type='text' name='username' required>
+                            <input class="form--input" class="form--input" type='text' name='username' required>
                         </div>
                         <div class="form--group">
                             <span class="form--title">Password :</span>
                         </div>
                         <div class="form--group">
-                            <input type='password' name='password' id='password' required>
+                            <input class="form--input" type='password' name='password' id='password' required>
                         </div>
                         <div class="form--group">
                             <span class="form--title">Confirm Password :</span>
                         </div>
                         <div class="form--group">
-                            <input type='password' id='confirm-password' required>
+                            <input class="form--input" type='password' id='confirm-password' required>
                         </div>
                         <div>
                             <input class="button--outline" type='submit' value='Login'>
@@ -96,5 +119,8 @@
         </div>
     </section>
     <!-- login-register end -->
+    
+    <!-- login-register script -->
+    <script src="../public/js/dhtmlxcalendar/dhtmlxcalendar.js"></script>
 </body>
 </html>
