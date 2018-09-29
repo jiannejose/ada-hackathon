@@ -1,20 +1,23 @@
 .footer {
-    background-color: $pink-800; 
+    background-color: $pink-600; 
+    text-align: center;
+    padding: 10px;
 }
 
-.footer__copyright {
-    text-align: center;
+.footer_team ul {
+    list-style: none;
 }
 
-.footer__description {
-    text-align: center;
+.footer_team li {
+   display: inline-block;
 }
 
 .footer__team-members {
-    width: 100px;
+    width: 50px;
 }
 
 .footer__img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
 }
