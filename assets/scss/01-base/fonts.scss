@@ -1,2 +1,33 @@
 $font-primary: 'Source Sans Pro', sans-serif;
 $font-secondary: 'Srisakdi', cursive;
+
+$font-xsmall: 10px;
+$font-small: 12px;
+$font-regular: 14px;
+$font-medium: 16px;
+$font-large: 18px;
+$font-xlarge: 24px;
+$font-xxlarge: 28px;
+$font-xxxlarge: 32px;
+
+@media screen and (min-width: 768px) {
+  $font-xsmall: 12px;
+  $font-small: 14px;
+  $font-regular: 16px;
+  $font-medium: 18px;
+  $font-large: 24px;
+  $font-xlarge: 28px;
+  $font-xxlarge: 32px;
+  $font-xxxlarge: 36px;
+}
+
+@media screen and (min-width: 1024px) {
+  $font-xsmall: 14px;
+  $font-small: 16px;
+  $font-regular: 18px;
+  $font-medium: 24px;
+  $font-large: 28px;
+  $font-xlarge: 32px;
+  $font-xxlarge: 36px;
+  $font-xxxlarge: 42px;
+}

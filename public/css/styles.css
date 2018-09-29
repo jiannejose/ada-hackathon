@@ -8,6 +8,7 @@ main {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .button {
@@ -36,9 +37,9 @@ main {
 .nav {
   position: fixed;
   width: 100%;
-  height: 60px;
-  background-color: #f58ed7;
+  height: 70px;
   z-index: 1;
+  background-color: #101217;
 }
 
 /*** Nav Header ***/
@@ -48,12 +49,13 @@ main {
   position: relative;
   top: 0;
   right: 0;
+  height: 70px;
+  background-color: #101217;
 }
 
 .nav__logo {
-  width: 60px;
-  height: 60px;
-  padding-left: 20px;
+  position: relative;
+  height: 50px;
 }
 .nav__logo img {
   height: 100%;
@@ -72,17 +74,107 @@ main {
   width: 35px;
   height: 3px;
   margin-top: 4px;
-  background-color: #101217;
+  background-color: #fe96bc;
+  transition: all 200ms ease;
 }
 
+.nav__toggle:hover {
+  cursor: pointer;
+}
+.nav__toggle:hover > span {
+  background-color: #eb4fba;
+}
+
+/*** Nav Main ***/
 .nav__main {
   position: absolute;
   top: 0;
   right: -100%;
-  width: 100%;
+  width: 70%;
+  height: 100vh;
   background-color: #f58ed7;
+  transition: all 300ms ease-in;
 }
 
+.nav__main.open {
+  right: 0;
+}
+
+.nav__menu {
+  position: relative;
+}
+
+.nav__toggle__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.nav__toggle__close > span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #ffffff;
+  transition: all 200ms ease;
+}
+.nav__toggle__close > span:first-child {
+  transform: rotate(45deg);
+}
+.nav__toggle__close > span:last-child {
+  transform: rotate(-45deg);
+  margin-top: -4px;
+}
+
+.nav__toggle__close:hover {
+  cursor: pointer;
+}
+.nav__toggle__close:hover > span {
+  background-color: #eb4fba;
+}
+
+.nav__menu-links {
+  position: relative;
+  top: 100px;
+}
+.nav__menu-links > ul {
+  list-style: none;
+  padding-left: 0;
+}
+.nav__menu-links li {
+  padding: 30px 0 20px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav__menu-links a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 200ms ease;
+}
+
+.nav__menu-links a:hover {
+  color: #eb4fba;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__main {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav {
+    height: 100px;
+  }
+
+  .nav__header {
+    height: 100px;
+  }
+
+  .nav__logo {
+    height: 80px;
+  }
+}
 .footer {
   background-color: #eb4fba;
 }
@@ -302,7 +394,14 @@ main {
   position: relative;
   width: 100%;
   max-width: 1100px;
+  padding: 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
