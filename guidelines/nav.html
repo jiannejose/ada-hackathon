@@ -17,16 +17,16 @@
                     <img src="../assets/images/bloom1.png" alt="Logo" />
                 </div>
 
-                <div class="nav__toggle" id="navToggle">
+                <div class="nav__toggle" onclick="toggleNav()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
 
-            <div class="nav__main">
-                <div class="nav__menu" id="navMenu">
-                    <div class="nav__toggle--close">
+            <div class="nav__main" id="navMenu">
+                <div class="nav__menu">
+                    <div class="nav__toggle__close" onclick="toggleNav()">
                         <span></span>
                         <span></span>
                     </div>
@@ -35,29 +35,25 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <span class="c-nav-icon"><i class="fa fa-home"></i></span>
-                                    <span class="c-nav-label">home</span>
+                                    <span class="c-nav-label">Home</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
-                                    <span class="nav-icon"><i class="fa fa-heart"></i></span>
-                                    <span class="nav-label">about me</span>
+                                    <span class="nav-label">How to Play</span>
                                 </a>
                             </li>  
 
                             <li>
                                 <a href="#">
-                                    <span class="nav-icon"><i class="fa fa-desktop"></i></span>
-                                    <span class="nav-label">portfolio</span>
+                                    <span class="nav-label">Rules</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">
-                                    <span class="nav-icon"><i class="fa fa-envelope"></i></span>
-                                    <span class="nav-label">drop me a line</span>
+                                    <span class="nav-label">Contact Us</span>
                                 </a>
                             </li>
                         </ul>
@@ -71,5 +67,7 @@
 
     </nav>
     <!-- nav end -->
+
+    <script src="../assets/js/nav.js"></script>
 </body>
 </html>

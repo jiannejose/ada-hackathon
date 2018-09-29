@@ -1,9 +1,9 @@
 .nav {
   position: fixed;
   width: 100%;
-  height: 60px;
-  background-color: $pink-700;
+  height: 70px;
   z-index: 1;
+  background-color: $black-800;
 }
 
 /*** Nav Header ***/
@@ -14,12 +14,13 @@
   position: relative;
   top: 0;
   right: 0;
+  height: 70px;
+  background-color: $black-800;
 }
 
 .nav__logo {
-  width: 60px;
-  height: 60px;
-  padding-left: 20px;
+  position: relative;
+  height: 50px;
 
   img {
     height: 100%;
@@ -39,14 +40,117 @@
     width: 35px;
     height: 3px;
     margin-top: 4px;
-    background-color: $black-800;
+    background-color: $pink-600;
+    transition: all 200ms ease;
   }
 }
 
+.nav__toggle:hover {
+  cursor: pointer;
+
+  > span {
+    background-color: $pink-800;
+  }
+}
+
+/*** Nav Main ***/
 .nav__main {
   position: absolute;
   top: 0;
   right: -100%;
-  width: 100%;
+  width: 70%;
+  height: 100vh;
   background-color: $pink-700;
+  transition: all 300ms ease-in;
+}
+
+.nav__main.open {
+  right: 0;
+}
+
+.nav__menu {
+  position: relative;
+}
+
+.nav__toggle__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  > span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: $white-900;
+    transition: all 200ms ease;
+  }
+
+  > span:first-child {
+    transform: rotate(45deg);
+  }
+
+  > span:last-child {
+    transform: rotate(-45deg);
+    margin-top: -4px;
+  }
+}
+
+.nav__toggle__close:hover {
+  cursor: pointer;
+
+  > span {
+    background-color: $pink-800;
+  }
+}
+
+.nav__menu-links {
+  position: relative;
+  top: 100px;
+  
+  > ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    padding: 30px 0 20px 50px;
+    border-bottom: 1px solid $black-800-transparent;
+  }
+
+  a {
+    color: $white-900;
+    font-size: $font-large;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 200ms ease;
+  }
+}
+
+.nav__menu-links a:hover {
+  color: $pink-800;
+}
+
+@media screen and (min-width:768px) {
+
+  .nav__main {
+    width: 45%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .nav {
+    height: 100px;
+  }
+
+  .nav__header {
+    height: 100px;
+  }
+
+  .nav__logo {
+    height: 80px;
+  }
 }
