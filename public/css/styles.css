@@ -27,6 +27,22 @@ main {
   background-color: #ffffff;
   color: #eb4fba; }
 
+.footer {
+  background-color: #eb4fba; }
+
+.footer__copyright {
+  text-align: center; }
+
+.footer__description {
+  text-align: center; }
+
+.footer__team-members {
+  width: 100px; }
+
+.footer__img {
+  width: 100%;
+  height: auto; }
+
 .row {
   display: flex;
   flex-wrap: wrap;
