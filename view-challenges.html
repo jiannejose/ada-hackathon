@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View Challenges</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Srisakdi:700" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+<body>
+    <!-- nav start -->
+    <nav>
+        <div class="nav">
+            <div class="nav__header container">
+                <div class="nav__logo">
+                    <img src="./assets/images/bloom1.png" alt="Logo" />
+                </div>
+
+                <div class="nav__toggle" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="nav__main" id="navMenu">
+                <div class="nav__menu">
+                    <div class="nav__toggle__close" onclick="toggleNav()">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="nav__menu-links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="c-nav-label">Home</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">How to Play</span>
+                                </a>
+                            </li>  
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">Rules</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- /c-nav__menu-links -->
+
+                </div> <!-- /c-nav__menu -->
+        
+            </div> <!-- /c-nav__main -->
+
+        </div> <!-- /c-nav -->
+
+    </nav>
+    <!-- nav end -->
+
+    <!-- greeting start -->
+    <div class="greeting__container">
+        <div class="greeting__container__bg">
+            <img src="./assets/images/bg.png" alt="Background">
+        </div>
+        <div class="greeting container">
+            <div class="message">
+                <h1>Hey!</h1>
+                <h1>Are you up for a new challenge?</h1>
+            </div>
+            <div class="greeting__arrow">
+                <a href="#"></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- greeting end -->
+
+    <!-- challenge categories start -->
+    <div class="challenge-categories__container container">
+        <h1 class="message">Choose!</h1>
+        <div class="challenge-categories">
+            <div class="row challenge-categories__list">
+                <button class="button button--outline col-6 challenge-categories__category --active">
+                    <h3>Easy</h3>
+                </button>
+                <button class="button button--outline col-6 challenge-categories__category">
+                    <h3>Medium</h3>
+                </button>
+                <button class="button button--outline col-6 challenge-categories__category">
+                    <h3>Medium</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- challenge categories end -->
+
+    <!-- challenges cards start -->
+    <div class="challenges__cards__container">
+        <div class="row">
+            <div class="col-12 card">
+                <div class="card__content">
+                    <div class="card__top">
+                        <div class="card__top__status">
+                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="card__top__tag">
+                            <i class="fa fa-tags" aria-hidden="true"></i>
+                            <p class="language">HTML</p>
+                        </div>
+                    </div>
+                    <div class="card__details">
+                        <h2 class="card__details__title">Organize a group study in your school.</h2>
+                        <h1 class="card__details__points">10 pts</h1>
+                        <h3 class="card__details__less-points">Take for 5pts</h3>
+                        <button class="button button--outline button--green">Accept!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- challenges cards end -->
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

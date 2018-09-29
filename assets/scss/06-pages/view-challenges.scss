@@ -1,0 +1,152 @@
+.greeting__container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+  background-color: $pink-600;
+}
+
+.greeting__container__bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.greeting {
+  width: 100%;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5)
+}
+
+.message {
+  padding: 70px 50px;
+  margin: 0;
+  text-transform: uppercase;
+  > h1 {
+    line-height: 1.8em;
+  }
+
+  > h1:first-child {
+    margin-top: 0;
+  }
+}
+
+.greeting__arrow {
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+
+  a {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 15px solid $black-800;
+    border-top: none;
+    border-right: none;
+    box-shadow: -4px 4px 13px 0 rgba(255, 255, 255, 0.5);
+    transform: rotate(-45deg);
+  }
+}
+
+.challenge-categories__container {
+  padding-bottom: 50px;
+
+  .message {
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+}
+
+.challenge-categories__list {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.challenge-categories__category {
+  height: auto;
+  margin-top: 20px;
+  border: 3px solid $pink-800;
+
+  > h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.challenge-categories__category.--active {
+  background-color: $pink-800;
+  color: $white-900;
+}
+
+
+// Cards
+.challenges__cards__container {
+  padding: 20px;
+  margin: 20px;
+  border: 3px solid $green-800;
+}
+
+.card {
+  height: auto;
+  margin-top: 20px;
+  border: 3px solid $pink-800;
+}
+
+.card__content {
+  padding: 0 20px 10px;
+}
+
+.card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__top__status {
+  font-size: $font-xxlarge;
+  
+  > i {
+    color: $green-800;
+  }
+}
+
+.card__top__tag {
+  display: flex;
+  align-items: center;
+  font-size: $font-xlarge;
+
+  > .language {
+    padding-left: 10px;
+    font-weight: 700;
+  }
+}
+
+.card__details {
+  text-align: center;
+
+  > .button {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+.card__details__points {
+  font-size: $font-xxxlarge;
+}
+
+.card__details__less-points {
+ opacity: 0;
+}
