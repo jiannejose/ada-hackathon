@@ -1,78 +1,27 @@
-.greeting__container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  padding-top: 60px;
-  background-color: $pink-600;
-}
-
-.greeting__container__bg {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-
-  > img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.greeting {
-  width: 100%;
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5)
-}
-
-.message {
-  padding: 70px 50px;
-  margin: 0;
-  text-transform: uppercase;
-  > h1 {
-    line-height: 1.8em;
-  }
-
-  > h1:first-child {
-    margin-top: 0;
-  }
-}
-
-.greeting__arrow {
-  position: relative;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 100px;
-
-  a {
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: transparent;
-    border: 15px solid $black-800;
-    border-top: none;
-    border-right: none;
-    box-shadow: -4px 4px 13px 0 rgba(255, 255, 255, 0.5);
-    transform: rotate(-45deg);
-  }
-}
-
+// Challenges Category
 .challenge-categories__container {
   padding-bottom: 50px;
+  margin-top: 200px;
 
   .message {
     padding-bottom: 40px;
     padding-left: 0;
+    text-transform: uppercase;
+    text-align: center;
   }
+
+  .message:nth-child(2) {
+    font-size: 56px;
+  } 
 }
 
 .challenge-categories__list {
   flex-wrap: wrap;
   justify-content: space-around;
+
+  .button {
+    font-size: $font-large;
+  }
 }
 
 .challenge-categories__category {
@@ -92,17 +41,30 @@
 }
 
 
-// Cards
+// Challenges Cards
 .challenges__cards__container {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.challenges__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 40px);
   padding: 20px;
-  margin: 20px;
-  border: 3px solid $green-800;
+  margin: 0 auto;
+  border: 5px dotted $black-800;
+  transition: all 200ms ease;
 }
 
 .card {
+  width: 100%;
   height: auto;
   margin-top: 20px;
-  border: 3px solid $pink-800;
+  margin-right: 0;
+  background-color: $white-800;
+  border: 1px solid $black-800;
 }
 
 .card__content {
@@ -117,6 +79,13 @@
 
 .card__top__status {
   font-size: $font-xxlarge;
+
+  > i {
+    color: #c9c9c9;
+  }
+}
+
+.card__top__status--accomplished {
   
   > i {
     color: $green-800;
@@ -135,6 +104,7 @@
 }
 
 .card__details {
+  padding-top: 30px;
   text-align: center;
 
   > .button {
@@ -144,9 +114,35 @@
 }
 
 .card__details__points {
+  color: $pink-800;
   font-size: $font-xxxlarge;
 }
 
 .card__details__less-points {
  opacity: 0;
+}
+
+@media screen and (min-width: 769px ) {
+  .card {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+  }
+
+  .card:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1025px ) {
+  .card {
+    width: calc(33% - 20px);
+  }
+
+  .card:nth-child(even) {
+    margin-right: 20px;
+  }
+
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
 }

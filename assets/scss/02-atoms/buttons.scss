@@ -12,14 +12,20 @@
 }
 
 .button--green {
-  background-color: $green-700;
+  background-color: $green-800;
   border: 2px solid $green-800;
-  color: $black-800;
+  color: $white-900;
 }
 
 .button--outline {
   background-color: $white-900;
   color: $pink-800;
+}
+
+.button--disabled {
+  background-color: $gray-800;
+  border: 2px solid $gray-800;
+  color: $white-800;
 }
 
 .button:hover {
@@ -29,7 +35,14 @@
 }
 
 .button--green:hover {
-  background-color: $green-800;
-  border: 2px solid $black-800;
+  background-color: $green-700;
+  border: 2px solid $green-700;
   color: $white-900;
+}
+
+.button--disabled:hover {
+  cursor: not-allowed;
+  background-color: $gray-800;
+  border: 2px solid $gray-800;
+  color: $white-800;
 }
