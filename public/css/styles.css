@@ -90,6 +90,14 @@ main {
   height: auto;
   border-radius: 50%; }
 
+.login--form {
+  padding: 40px; }
+
+.login__banner {
+  background-color: #f58ed7;
+  width: 100%;
+  height: 100%; }
+
 .row {
   display: flex;
   flex-wrap: wrap;

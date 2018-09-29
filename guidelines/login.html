@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 <body>
-    
+    <section class="login">
+        <div class="row">
+            <div class="col-5">
+                <div class="login__banner">
+
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="login--form">
+                    <h2>Already a member? Login here.</h2>
+                    <form action='backend/login_validate.php' method='POST'>
+                        <div class="form--group">
+                            <span class="form--title">Username :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='text' name='username' required><br>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Password :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='password' name='password' required>
+                        </div>
+                        <div>
+                            <input type='submit' value='Login'>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
