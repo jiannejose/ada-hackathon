@@ -23,7 +23,8 @@
 
 .col-4 {
   flex: 4 1 33.333%;
-  max-width: calc(33.333% - 20px);
+  min-width: calc(33.333% - 20px);
+  max-width: 33.333%;
 }
 
 .col-5 {
