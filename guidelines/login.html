@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 <body>
-    <section class="login">
+    <!-- login--register start -->
+    <section class="login-register container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-6">
                 <div class="login__banner">
-
+                    <img src="../assets/images/login-banner.jpg" />
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-6">
+                <!-- login--form start -->
                 <div class="login--form">
                     <h2>Already a member? Login here.</h2>
                     <form action='backend/login_validate.php' method='POST'>
@@ -24,21 +26,75 @@
                             <span class="form--title">Username :</span>
                         </div>
                         <div class="form--group">
-                            <input type='text' name='username' required><br>
+                            <input class="form--input" type='text' name='username' required><br>
                         </div>
                         <div class="form--group">
                             <span class="form--title">Password :</span>
                         </div>
                         <div class="form--group">
-                            <input type='password' name='password' required>
+                            <input class="form--input" type='password' name='password' required>
                         </div>
                         <div>
-                            <input type='submit' value='Login'>
+                            <input class="button--outline" type='submit' value='Login'>
                         </div>
                     </form>
                 </div>
+                <!-- login--form end -->
+                <!-- register--form start -->
+                <div class="register--form">
+                    <h2>Join us. Create an Account here.</h2>
+                    <form action='backend/sign_up_validate.php' method='POST'>
+                        <div class="form--group">
+                            <span class="form--title">First Name :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='text' name='firstname' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Last Name :</span>
+                        </div>
+                        <div class="form--group">
+                                <input type='text' name='lastname' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Birthday :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='text' name='birthday' id='calendar' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Email :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='text' name='email' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Username :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='text' name='username' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Password :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='password' name='password' id='password' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Confirm Password :</span>
+                        </div>
+                        <div class="form--group">
+                            <input type='password' id='confirm-password' required>
+                        </div>
+                        <div>
+                            <input class="button--outline" type='submit' value='Login'>
+                        </div>
+                    </form>
+                </div>
+                <!-- register--form end -->
             </div>
         </div>
     </section>
+    <!-- login-register end -->
 </body>
 </html>
