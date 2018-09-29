@@ -1,0 +1,90 @@
+// Multiple Choice
+
+.revealed-cards__container {
+  margin-top: 150px;
+
+  .category {
+    margin-bottom: 50px;
+  }
+}
+
+.card__task {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  background-color: $white-800;
+  border: 2px solid $pink-800;
+}
+
+.card__details__instruction,
+.card__details__question,
+.card__details__choices {
+  font-size: $font-large;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.card__details__choices > div {
+  padding-bottom: 10px;
+}
+
+.radio {
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  > input {
+    display: none;
+  }
+}
+
+.radio__button {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $pink-700;
+  border-radius: 100%;
+  box-shadow: 0px 0px 6px 0px $black-800-transparent;
+  transition: all 150ms ease-in;
+
+  &::before {
+    content: "";
+    color: $white-900;
+    transition: all 150ms ease-in;
+  }
+}
+
+.radio__text {
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.radio > input:checked {
+  & + .radio__button:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: $pink-700;
+    border-radius: 100%;
+  }
+}
+
+.radio > input:disabled {
+  & + .radio__button {
+    background-color: $gray-800;
+    border: 2px solid $white-800;
+    cursor: not-allowed;
+  }
+
+  & ~ .radio__text {
+    color: $gray-800;
+    cursor: not-allowed;
+  }
+}

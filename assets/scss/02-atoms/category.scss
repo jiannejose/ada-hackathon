@@ -1,0 +1,14 @@
+.category {
+  display: block;
+  width: 40%;
+  min-width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: $pink-700;
+  border: 4px solid $pink-800;
+  color: $white-900;
+  font-size: $font-large;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
