@@ -1,4 +1,22 @@
-.buttons {
-  padding: 40px;
+.button {
+  min-width: 80px;
+  padding: 10px;
   background-color: $pink-700;
+  border: 2px solid $pink-800;
+  color: $white-900;
+  font-family: $font-primary;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.button--green {
+  background-color: $green-700;
+  border: 2px solid $green-800;
+  color: $green-800;
+}
+
+.button--outline {
+  background-color: $white-900;
+  color: $pink-800;
 }

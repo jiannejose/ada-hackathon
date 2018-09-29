@@ -1,6 +1,35 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body,
+main {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
 .button {
-  padding: 40px;
+  min-width: 80px;
+  padding: 10px;
   background-color: #f58ed7;
+  border: 2px solid #eb4fba;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.button--green {
+  background-color: #83f285;
+  border: 2px solid #137f18;
+  color: #137f18;
+}
+
+.button--outline {
+  background-color: #ffffff;
+  color: #eb4fba;
 }
 
 /*# sourceMappingURL=styles.css.map */
