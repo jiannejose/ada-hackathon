@@ -1,0 +1,195 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.col-1 {
+  flex: 1 1 8.333%;
+  max-width: calc(8.333% - 20px);
+}
+
+.col-2 {
+  flex: 2 1 16.667%;
+  max-width: calc(16.667% - 20px);
+}
+
+.col-3 {
+  flex: 3 1 24.999%;
+  max-width: calc(24.999% - 20px);
+}
+
+.col-4 {
+  flex: 4 1 33.333%;
+  max-width: calc(33.333% - 20px);
+}
+
+.col-5 {
+  flex: 5 1 41.665%;
+  max-width: calc(41.665% - 20px);
+}
+
+.col-6 {
+  flex: 6 1 49.998%;
+  max-width: calc(49.998% - 20px);
+} 
+
+.col-7 {
+  flex: 7 1 58.333%;
+  max-width: calc(58.333% - 20px);
+}
+
+.col-8 {
+  flex: 8 1 66.664%;
+  max-width: calc(66.664% - 20px);
+}
+
+.col-9 {
+  flex: 9 1 74.997%;
+  max-width: calc(74.997% - 20px);
+}
+
+.col-10 {
+  flex: 10 1 83.333%;
+  max-width: calc(83.333% - 20px);
+}
+
+.col-11 {
+  flex: 11 1 91.663%;
+  max-width: calc(91.663% - 20px);
+}
+
+.col-12 {
+  flex: 12 1 100%;
+  max-width: calc(100% - 20px);
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  margin-right: 20px;
+}
+
+.col-1:last-child,
+.col-2:last-child,
+.col-3:last-child,
+.col-4:last-child,
+.col-5:last-child,
+.col-6:last-child,
+.col-7:last-child,
+.col-8:last-child,
+.col-9:last-child,
+.col-10:last-child,
+.col-11:last-child,
+.col-12:last-child {
+  margin-right: 0;
+}
+
+
+.col-1:last-child {
+  min-width: 8.333%;
+}
+
+.col-2:last-child {
+  min-width: 16.667%;
+}
+
+.col-3:last-child {
+  min-width: 24.999%;
+}
+
+.col-4:last-child {
+  min-width: 33.333%;
+}
+
+.col-5:last-child {
+  min-width: 41.665%;
+}
+
+.col-6:last-child {
+  min-width: 49.998%;
+}
+
+.col-7:last-child {
+  min-width: 58.333%;
+}
+
+.col-8:last-child {
+  min-width: 66.664%;
+}
+
+.col-9:last-child {
+  min-width: 74.997%;
+}
+
+.col-10:last-child {
+  min-width: 83.333%;
+}
+
+.col-11:last-child {
+  min-width: 91.663%;
+}
+
+.col-12:last-child {
+  min-width: 100%;
+}
+
+
+.col-offset-1 {
+  margin-left: 8.333%;
+}
+
+.col-offset-2 {
+  margin-left: 16.667%;
+}
+
+.col-offset-3 {
+  margin-left: 24.999%;
+}
+
+.col-offset-4 {
+  margin-left: 33.333%;
+}
+
+.col-offset-5 {
+  margin-left: 41.665%;
+}
+
+.col-offset-6 {
+  margin-left: 49.998%;
+}
+
+.col-offset-7 {
+  margin-left: 58.333%;
+}
+
+.col-offset-8 {
+  margin-left: 66.664%;
+}
+
+.col-offset-9 {
+  margin-left: 74.997%;
+}
+
+.col-offset-10 {
+  margin-left: 83.333%;
+}
+
+.col-offset-11 {
+  margin-left: 91.663%;
+}
+
+.col-offset-12 {
+  margin-left: 100%;
+}
