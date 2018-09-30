@@ -250,6 +250,7 @@ main {
   position: relative;
   background: #ffb0cd;
   padding: 40px;
+  margin-top: 100px;
 }
 
 .login--register__background {
@@ -300,6 +301,28 @@ main {
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .login--register {
+    margin-top: 70px;
+  }
+
+  .login--register .form__container > .col-6 {
+    width: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .login__banner {
+    display: none;
+  }
+}
+.rules {
+  padding-bottom: 100px;
+  padding-top: 60px;
+  border: 1px solid #eee;
+  background: #f4f4f4;
+}
+
 .rules h2 {
   text-transform: uppercase;
   color: #eb4fba;
@@ -310,6 +333,32 @@ main {
   margin-bottom: 20px;
 }
 
+.how-to-play__container {
+  margin-top: 60px;
+}
+
+.how-to-play__container > div > h2 {
+  text-transform: uppercase;
+  color: #eb4fba;
+}
+
+.how-to-play__container .challenges__cards__container {
+  margin-top: 0;
+}
+
+.how-to-play__container .challenges__cards {
+  border: 0;
+}
+
+.how-to-play__container .card__content {
+  padding: 0 20px 30px;
+}
+
+@media screen and (min-width: 1025px) {
+  .how-to-play__container .challenges__cards .card {
+    width: calc(22% - 20px);
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
