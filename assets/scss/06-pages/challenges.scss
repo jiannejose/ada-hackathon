@@ -17,12 +17,29 @@
   border: 2px solid $pink-800;
 }
 
+.card__top__tag {
+  .language {
+    text-transform: uppercase;
+  }
+}
+
 .card__details__instruction,
 .card__details__question,
 .card__details__choices {
   font-size: $font-large;
   text-align: left;
   padding-bottom: 10px;
+}
+
+.card__details__question {
+  width: 100%;
+  text-align: center;
+
+  > img {
+    width: 200px;
+    margin: 0 auto;
+    
+  }
 }
 
 .card__details__choices > div {
@@ -86,5 +103,30 @@
   & ~ .radio__text {
     color: $gray-800;
     cursor: not-allowed;
+  }
+}
+
+// Pictogram
+// Challenge Activity
+.textbox {
+  width: 80%;
+  padding: 12px 15px;
+  margin-top: 40px;
+  border: 1px solid $pink-800;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px 2px $black-800-transparent;
+  font-family: inherit;
+  font-size: $font-regular;
+  transition: all 200ms ease;
+}
+
+form {
+  .upload-btn {
+    max-width: 200px;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 30px;
   }
 }

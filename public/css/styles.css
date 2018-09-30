@@ -594,6 +594,7 @@ main {
 .card__top__tag > .language {
   padding-left: 10px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .card__details {
@@ -653,12 +654,25 @@ main {
   border: 2px solid #eb4fba;
 }
 
+.card__top__tag .language {
+  text-transform: uppercase;
+}
+
 .card__details__instruction,
 .card__details__question,
 .card__details__choices {
   font-size: 18px;
   text-align: left;
   padding-bottom: 10px;
+}
+
+.card__details__question {
+  width: 100%;
+  text-align: center;
+}
+.card__details__question > img {
+  width: 200px;
+  margin: 0 auto;
 }
 
 .card__details__choices > div {
@@ -716,6 +730,26 @@ main {
 .radio > input:disabled ~ .radio__text {
   color: #c9c9c9;
   cursor: not-allowed;
+}
+
+.textbox {
+  width: 80%;
+  padding: 12px 15px;
+  margin-top: 40px;
+  border: 1px solid #eb4fba;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.2);
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 200ms ease;
+}
+
+form .upload-btn {
+  max-width: 200px;
+}
+form .button {
+  width: 100%;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
