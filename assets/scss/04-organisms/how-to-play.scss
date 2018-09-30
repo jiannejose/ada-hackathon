@@ -1,0 +1,23 @@
+.how-to-play__container > div > h2 {
+    text-transform: uppercase;
+    color: $pink-800;
+}
+
+.how-to-play__container .challenges__cards__container {
+    margin-top: 0;
+}
+
+.how-to-play__container .challenges__cards {
+    border: 0;
+}
+
+.how-to-play__container .card__content {
+    padding: 0 20px 30px;
+}
+
+
+@media screen and (min-width: 1025px) {
+    .how-to-play__container .challenges__cards .card {
+        width: calc(22% - 20px);
+    }
+}
