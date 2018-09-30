@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leaderboards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+<body>
+    <!-- nav start -->
+    <nav>
+        <div class="nav">
+            <div class="nav__header container">
+                <div class="nav__logo">
+                    <img src="./assets/images/bloom1.png" alt="Logo" />
+                </div>
+
+                <div class="nav__toggle" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="nav__main" id="navMenu">
+                <div class="nav__menu">
+                    <div class="nav__toggle__close" onclick="toggleNav()">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="nav__menu-links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="c-nav-label">Home</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">Face the Challenges</span>
+                                </a>
+                            </li>  
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">View Your Progress</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">Leaderboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- /c-nav__menu-links -->
+
+                </div> <!-- /c-nav__menu -->
+        
+            </div> <!-- /c-nav__main -->
+
+        </div> <!-- /c-nav -->
+
+    </nav>
+    <!-- nav end -->
+
+    <!-- leaderboard start -->
+    <div class="leaderboard__container">
+        <h1 class="category category--green">Leaderboards</h1>
+
+        <div class="table__details">
+            <h2 class="table__title">Top Challengers</h2>
+            <p>See how you ranked with your peers.</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th><i class="fa fa-star" aria-hidden="true"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>500 <i class="fa fa-star" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>John Doe</td>
+                    <td>400 <i class="fa fa-star" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>John Doe</td>
+                    <td>300 <i class="fa fa-star" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>John Doe</td>
+                    <td>200 <i class="fa fa-star" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>100 <i class="fa fa-star" aria-hidden="true"></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table__details">
+            <h2 class="table__title">Top Contributors</h2>
+            <p>Top 5 awesome challenge makers.</p>
+        </div>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th><i class="fa fa-trophy" aria-hidden="true"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>500 <i class="fa fa-trophy" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>John Doe</td>
+                    <td>400 <i class="fa fa-trophy" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>John Doe</td>
+                    <td>300 <i class="fa fa-trophy" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>John Doe</td>
+                    <td>200 <i class="fa fa-trophy" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>100 <i class="fa fa-trophy" aria-hidden="true"></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table__details">
+            <h2 class="table__title">Top Environment Stewards</h2>
+            <p>Challengers who bloom as they wish to have their tree grow. </p>
+        </div>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th><i class="fa fa-tree" aria-hidden="true"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>5000pts = 5 <i class="fa fa-tree" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>John Doe</td>
+                    <td>4000pts = 4 <i class="fa fa-tree" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>John Doe</td>
+                    <td>3000pts = 3 <i class="fa fa-tree" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>John Doe</td>
+                    <td>2000pts = 2 <i class="fa fa-tree" aria-hidden="true"></i></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>John Doe</td>
+                    <td>1000pts = 1 <i class="fa fa-tree" aria-hidden="true"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- leaderboard end -->
+    
+    <!-- footer start -->
+    <footer class="footer"> 
+        <div class="row">
+            <div class="col-12">
+                <p class="footer__copyright">
+                    &copy; 2018 <a href="/">Bloom</a>
+                </p>
+                <p class="footer__description">
+                    A project created by Team ADA for Develop Her:All Female Hackathon <br>
+                    September 29-30, 2018
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="footer_team"> 
+                    <h5>Team ADA Members</h5>
+                    <ul>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="assets/images/clara.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/milky.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/ji-anne.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/azel.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/gracey.jpg" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
