@@ -52,4 +52,16 @@
 }
 
 
-
+@media screen and (max-width: 768px) {
+  .login--register {
+    margin-top: 70px;
+  }
+  .login--register .form__container > .col-6 {
+    width: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .login__banner { 
+    display: none;
+  }
+}
