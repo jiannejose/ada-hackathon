@@ -201,7 +201,8 @@ main {
 .login--register {
   position: relative;
   background: #ffb0cd;
-  padding: 40px; }
+  padding: 40px;
+  margin-top: 100px; }
 
 .login--register__background {
   position: absolute;
@@ -243,6 +244,12 @@ main {
   width: 100%;
   height: 100%; }
 
+.rules {
+  padding-bottom: 100px;
+  padding-top: 60px;
+  border: 1px solid #eee;
+  background: #f4f4f4; }
+
 .rules h2 {
   text-transform: uppercase;
   color: #eb4fba; }
@@ -250,6 +257,9 @@ main {
 .rules__list li {
   font-size: 18px;
   margin-bottom: 20px; }
+
+.how-to-play__container {
+  margin-top: 60px; }
 
 .how-to-play__container > div > h2 {
   text-transform: uppercase;

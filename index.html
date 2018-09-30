@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+<body>
+    <!-- nav start -->
+    <nav>
+        <div class="nav">
+            <div class="nav__header container">
+                <div class="nav__logo">
+                    <img src="./assets/images/bloom1.png" alt="Logo" />
+                </div>
+
+                <div class="nav__toggle" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="nav__main" id="navMenu">
+                <div class="nav__menu">
+                    <div class="nav__toggle__close" onclick="toggleNav()">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="nav__menu-links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="c-nav-label">Home</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">How to Play</span>
+                                </a>
+                            </li>  
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">Rules</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="nav-label">Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- /c-nav__menu-links -->
+
+                </div> <!-- /c-nav__menu -->
+        
+            </div> <!-- /c-nav__main -->
+
+        </div> <!-- /c-nav -->
+
+    </nav>
+    <!-- nav end -->
+    
+    <!-- login--register start -->
+    <section class="login--register">
+        <div class="row form__container container">
+            <div class="col-6">
+                <div class="login__banner">
+                    <div class="login--register__background">
+                        <img src="./assets/images/3.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- login--form start -->
+                <div class="login--form">
+                    <h2>Already a member? Login here.</h2>
+                    <form action='backend/login_validate.php' method='POST'>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">Username :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='text' name='username' required><br>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">Password :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='password' name='password' required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form--button">
+                            <input class="button--outline" type='submit' value='Login'>
+                        </div>
+                    </form>
+                </div>
+                <!-- login--form end -->
+                <!-- register--form start -->
+                <div class="register--form">
+                    <h2>Join us. Create an Account here.</h2>
+                    <form action='backend/sign_up_validate.php' method='POST'>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">First Name :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='text' name='firstname' required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form--group">
+                                    <span class="form--title">Last Name :</span>
+                                </div>
+                                <div class="form--group">
+                                    <input class="form--input" type='text' name='lastname' required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Birthday :</span>
+                        </div>
+                        <div class="form--group">
+                            <input class="form--input" type='text' name='birthday' id='calendar' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Email :</span>
+                        </div>
+                        <div class="form--group">
+                            <input class="form--input" type='text' name='email' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Username :</span>
+                        </div>
+                        <div class="form--group">
+                            <input class="form--input" class="form--input" type='text' name='username' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Password :</span>
+                        </div>
+                        <div class="form--group">
+                            <input class="form--input" type='password' name='password' id='password' required>
+                        </div>
+                        <div class="form--group">
+                            <span class="form--title">Confirm Password :</span>
+                        </div>
+                        <div class="form--group">
+                            <input class="form--input" type='password' id='confirm-password' required>
+                        </div>
+                        <div>
+                            <input class="button--outline" type='submit' value='Login'>
+                        </div>
+                    </form>
+                </div>
+                <!-- register--form end -->
+            </div>
+        </div>
+    </section>
+    <!-- login-register end -->
+
+    <!-- how-to-play start -->
+    <div class="how-to-play__container">
+        <div class="container">
+            <h2>
+                How to play
+            </h2>
+        </div>
+            
+        <div class="challenges__cards__container">
+            <div class="challenges__cards container">
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__details">
+                            <h2 class="card__details__title">Complete a challenge to earn points.</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__details">
+                            <h2 class="card__details__title">Create a challenge and have it approved to earn a trophy.</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__details">
+                            <h2 class="card__details__title">Use points to get a reward.</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__details">
+                            <h2 class="card__details__title">Complete a challenge to earn points.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- how-to-play end -->
+
+    <!-- rules start -->
+    <section class="rules">
+        <div class="rules__container container">
+            <h2>Rules of the Game</h2>
+            <ol class="rules__list">
+                <li>
+                    Receive 50 points upon registration/ sign-up.
+                </li>
+                <li>
+                    User is required to have at least 300 points to create/contribute a challenge.
+                </li>
+                <li>
+                    5 points are deducted on your account upon accepting a difficult challenge.
+                </li>
+                <li>
+                    Creating your own challenge means deducting 100 points to your account. Created challenge will be validated by the admin.
+                </li>
+                <li>
+                    If the created challenge is rejected by admin (duplicate/not tech challenge related), 100 points are refunded in your account.
+                </li>
+                <li>
+                    An approved created challenge means 1 trophy and 100 points.
+                </li>
+                <li>
+                    User is given a chance to have 3 attempts to complete a challenge. Once all the attempts are already used, user is not allowed to try that challenge.
+                </li>
+                <li>
+                    User can earn points by completing a challenge and/or completing your created challenge by other users.
+                </li>
+                <li>
+                    Earning 1000 points means 1 tree to be planted (during yearly activity of the organization).
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- rules start -->
+
+
+    <!-- footer start -->
+    <footer class="footer"> 
+        <div class="row">
+            <div class="col-12">
+                <p class="footer__copyright">
+                    &copy; 2018 <a href="/">Bloom</a>
+                </p>
+                <p class="footer__description">
+                    A project created by Team ADA for Develop Her:All Female Hackathon <br>
+                    September 29-30, 2018
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="footer_team"> 
+                    <h5>Team ADA Members</h5>
+                    <ul>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="assets/images/clara.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/milky.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/ji-anne.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/azel.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__team-members">
+                                <img class="footer__img" src="./assets/images/gracey.jpg" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- login-register script -->
+    <script src="../public/js/dhtmlxcalendar/dhtmlxcalendar.js"></script>
+</body>
+</html>
