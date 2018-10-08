@@ -5,9 +5,9 @@ This group was formed and joined the 'Accenture Develop Her: An All-Female Innov
 at Accenture Liquid Studio - Uptown. 
 
 ## Team Members
-Anne Jizrelle Jose <br/>
-Azel Alyne Tan <br/>
-Clara Mae Lugtu <br/>
-Mary Grace Mallari <br/>
-Milky Lorejo <br/>
+* Anne Jizrelle Jose
+* Azel Alyne Tan
+* Clara Mae Lugtu
+* Mary Grace Mallari
+* Milky Lorejo
 
